@@ -1,0 +1,47 @@
+include ../mixins/shared.jade
+
+
+
+doctype html
+html(class="no-js" lang="en")
+
+  head
+
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    block title
+    meta(name="description" content="Belinda Vega's portfolio.")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    link(rel="stylesheet" href="styles/main.min.css")
+
+  body
+
+    | @@include('./icons/svg/symbols.svg')
+    = "\n"
+
+    +ie('if lt IE 9')
+      p(class="browsehappy") You are using an #[strong outdated] browser. Please #[a(href="http://browsehappy.com/" target="_blank") upgrade your browser] to improve your experience.
+
+    header.page-row
+      section.inner
+        .logo Belinda Vega
+        nav
+          ul
+            block page-nav
+
+    main.page-row.page-row-expanded
+      section.inner
+        block article
+          
+    footer.page-row
+      section.inner
+        ul.social
+          li
+            a(href="") Instagram
+          li
+            a(href="") Twitter
+          li
+            a(href="") Pinterest
+
+    script(src="scripts/main.min.js")

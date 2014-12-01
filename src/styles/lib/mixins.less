@@ -1,0 +1,61 @@
+// see: https://github.com/twbs/bootstrap/blob/master/less/mixins/clearfix.less
+.clear-fix() {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+// size as a square
+.square(@size) {
+  width: @size;
+  height: @size;
+}
+
+
+
+// hide from both screenreaders and browsers: h5bp.com/u
+.hidden() {
+  display: none !important;
+  visibility: hidden;
+}
+
+
+
+// hide only visually, but make available for screenreaders: h5bp.com/v
+.visually-hidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  // extend the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
+  &.focusable {
+    &:active,
+    &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
+
+
+// hide visually and from screenreaders, but maintain layout
+.invisible() {
+  visibility: hidden;
+}

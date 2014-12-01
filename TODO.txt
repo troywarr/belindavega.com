@@ -1,0 +1,2 @@
+set up gulp-sourcemaps in gulpfile
+  https://www.npmjs.org/package/gulp-sourcemaps
