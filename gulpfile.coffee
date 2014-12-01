@@ -1,5 +1,6 @@
 # dependencies
 gulp        = require 'gulp'
+gulpIf      = require 'gulp-if'
 less        = require 'gulp-less'
 minifyCSS   = require 'gulp-minify-css'
 notify      = require 'gulp-notify'
@@ -8,7 +9,6 @@ rename      = require 'gulp-rename'
 imageMin    = require 'gulp-imagemin'
 uglify      = require 'gulp-uglify'
 coffee      = require 'gulp-coffee'
-gulpIf      = require 'gulp-if'
 fileInclude = require 'gulp-file-include'
 jade        = require 'gulp-jade'
 svgSprite   = require 'gulp-svg-sprites'
@@ -73,8 +73,7 @@ gulp.task 'scripts', ->
   streamBuild = streamQueue
     objectMode: true
 
-  # javascript
-  streamBuild.queue(
+  streamBuild.queue( # javascript
     gulp
       .src [
         "#{paths.npm}jquery/dist/jquery.js"
@@ -83,8 +82,7 @@ gulp.task 'scripts', ->
       ]
   )
 
-  # coffeescript
-  streamBuild.queue(
+  streamBuild.queue( # coffeescript
     gulp
       .src [
         "#{paths.src}scripts/lib/**/*.coffee"
@@ -98,8 +96,6 @@ gulp.task 'scripts', ->
     .pipe concat 'main.min.js'
     .pipe gulpIf PROD, uglify()
     .pipe gulp.dest "#{paths.dist}scripts/"
-    .pipe gulpIf DEV, browserSync.reload
-      stream: true
 
 # compile LESS, combine with vendor CSS & minify
 #   see: https://github.com/gulpjs/gulp/blob/master/docs/recipes/using-multiple-sources-in-one-task.md
@@ -129,8 +125,6 @@ gulp.task 'images', ->
         pngCrush()
       ]
     .pipe gulp.dest "#{paths.dist}images/"
-    .pipe gulpIf DEV, browserSync.reload
-      stream: true
 
 # SVG icon sprite
 #   see: http://css-tricks.com/svg-sprites-use-better-icon-fonts/
@@ -152,21 +146,24 @@ gulp.task 'html', ['svg-icons'], ->
     .pipe fileInclude
       basepath: paths.dist
     .pipe gulp.dest paths.dist
-    .pipe gulpIf DEV, browserSync.reload
-      stream: true
+
+# BrowserSync reload
+gulp.task 'bs-reload', ->
+  browserSync.reload()
+  return
 
 # watch for changes
 gulp.task 'watch', ->
   gulp.watch "#{paths.src}styles/**/*", ['styles']
-  gulp.watch "#{paths.src}scripts/**/*", ['scripts']
-  gulp.watch "#{paths.src}images/**/*", ['images']
+  gulp.watch "#{paths.src}scripts/**/*", -> runSequence 'scripts', 'bs-reload'
+  gulp.watch "#{paths.src}images/**/*", -> runSequence 'images', 'bs-reload'
   gulp.watch [
-    "#{paths.src}*.jade"
+    "#{paths.src}jade/**/*.jade"
     "#{paths.src}icons/*.svg"
-  ], ['html']
+  ], -> runSequence 'html', 'bs-reload'
 
 # default task: call with 'gulp' on command line
-gulp.task 'default', ->
-  runSequence 'clean', 'root', 'html', 'styles', 'scripts', 'images', ->
+gulp.task 'default', ['clean'], ->
+  runSequence ['root', 'html', 'styles', 'scripts', 'images'], ->
     if DEV
-      runSequence 'watch', 'browser-sync'
+      runSequence ['watch', 'browser-sync']
