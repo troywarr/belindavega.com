@@ -6,6 +6,17 @@
 
 
 
+// variables
+
+@color1: #f6e8d7;
+@color2: #b3b3b3;
+@color3: #1a1a1a;
+@color4: #fbb03b;
+@color5: #89a45e;
+@color6: #f7931e;
+
+
+
 // general/defaults
 
 html {
@@ -66,4 +77,42 @@ h1 {
   text-align: center;
   margin: 4rem 0 0.5rem;
   text-align: center;
+}
+
+.project-thumb {
+  height: 220px;
+  background-color: #eee;
+}
+
+.project-row {
+  margin-bottom: 20px;
+}
+
+.project-tabs {
+  .piped-nav(@color6);
+  font-size: 2rem;
+  margin-bottom: 30px;
+
+  :first-child {
+    padding-left: 0;
+  }
+}
+
+.social {
+  .piped-nav(@color6);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 30px 0 70px;
+}
+
+header {
+  nav {
+    ul {
+      .piped-nav(@color6);
+      font-size: 3rem;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 80px 0 60px;
+    }
+  }
 }
