@@ -18,10 +18,11 @@
   "homepage": "https://github.com/troywarr/belindavega.com",
   "devDependencies": {
     "browser-sync": "^1.7.2",
+    "browserify": "^6.3.3",
     "coffee-script": "^1.8.0",
+    "coffeeify": "^1.0.0",
     "del": "^0.1.3",
     "gulp": "^3.8.10",
-    "gulp-coffee": "^2.2.0",
     "gulp-concat": "^2.4.2",
     "gulp-file-include": "^0.7.0",
     "gulp-if": "^1.2.5",
@@ -35,12 +36,17 @@
     "gulp-uglify": "^1.0.1",
     "imagemin-pngcrush": "^4.0.0",
     "run-sequence": "^1.0.2",
-    "streamqueue": "^0.1.1",
+    "vinyl-transform": "^1.0.0",
     "yargs": "^1.3.3"
   },
   "dependencies": {
     "bootstrap": "git://github.com/troywarr/bootstrap-belindavega.com",
     "jquery": "^2.1.1",
-    "underscore": "^1.7.0"
+    "lodash": "^2.4.1"
+  },
+  "browserify": {
+    "transform": [
+      "coffeeify"
+    ]
   }
 }

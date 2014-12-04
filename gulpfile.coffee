@@ -8,14 +8,14 @@ concat      = require 'gulp-concat'
 rename      = require 'gulp-rename'
 imageMin    = require 'gulp-imagemin'
 uglify      = require 'gulp-uglify'
-coffee      = require 'gulp-coffee'
 fileInclude = require 'gulp-file-include'
 jade        = require 'gulp-jade'
 svgSprite   = require 'gulp-svg-sprites'
+browserify  = require 'browserify'
+transform   = require 'vinyl-transform'
 runSequence = require 'run-sequence'
 pngCrush    = require 'imagemin-pngcrush'
 del         = require 'del'
-streamQueue = require 'streamqueue'
 yargs       = require 'yargs'
 browserSync = require 'browser-sync'
 
@@ -41,9 +41,9 @@ paths =
 # error handling
 handleError = (err) ->
   notify.onError(
-    message: "Error: #{err.message}"
+    title: 'Gulp Error'
+    message: "#{err.message}"
   )(err)
-  console.log err.toString()
   @emit 'end'
 
 
@@ -68,33 +68,24 @@ gulp.task 'root', ->
     .src "#{paths.src}root/**/*"
     .pipe gulp.dest paths.dist
 
-# concat & minify scripts
+# compile, bundle and minify scripts
+#   see: https://medium.com/@sogko/gulp-browserify-the-gulp-y-way-bb359b3f9623
 gulp.task 'scripts', ->
-  streamBuild = streamQueue
-    objectMode: true
-
-  streamBuild.queue( # javascript
-    gulp
-      .src [
-        "#{paths.npm}jquery/dist/jquery.js"
-        "#{paths.npm}underscore/underscore.js"
-        "#{paths.src}scripts/vendor/modernizr.js"
-      ]
+  browserified = transform(
+    (filename) ->
+      browserify
+        entries: filename
+        extensions: ['.coffee']
+        debug: true
+      .bundle()
   )
 
-  streamBuild.queue( # coffeescript
-    gulp
-      .src [
-        "#{paths.src}scripts/lib/**/*.coffee"
-        "#{paths.src}scripts/main.coffee"
-      ]
-      .pipe coffee()
-  )
-
-  # combine
-  streamBuild.done()
-    .pipe concat 'main.min.js'
+  gulp
+    .src "#{paths.src}scripts/main.coffee"
+    .pipe(browserified)
     .pipe gulpIf PROD, uglify()
+    .pipe rename
+      extname: '.min.js'
     .pipe gulp.dest "#{paths.dist}scripts/"
 
 # compile LESS, combine with vendor CSS & minify
@@ -147,20 +138,15 @@ gulp.task 'html', ['svg-icons'], ->
       basepath: paths.dist
     .pipe gulp.dest paths.dist
 
-# BrowserSync reload
-gulp.task 'bs-reload', ->
-  browserSync.reload()
-  return
-
 # watch for changes
 gulp.task 'watch', ->
   gulp.watch "#{paths.src}styles/**/*", ['styles']
-  gulp.watch "#{paths.src}scripts/**/*", -> runSequence 'scripts', 'bs-reload'
-  gulp.watch "#{paths.src}images/**/*", -> runSequence 'images', 'bs-reload'
+  gulp.watch "#{paths.src}scripts/**/*", -> runSequence 'scripts', browserSync.reload
+  gulp.watch "#{paths.src}images/**/*", -> runSequence 'images', browserSync.reload
   gulp.watch [
     "#{paths.src}jade/**/*.jade"
     "#{paths.src}icons/*.svg"
-  ], -> runSequence 'html', 'bs-reload'
+  ], -> runSequence 'html', browserSync.reload
 
 # default task: call with 'gulp' on command line
 gulp.task 'default', ['clean'], ->
