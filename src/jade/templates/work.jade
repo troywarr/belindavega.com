@@ -1,0 +1,7 @@
+each row in projects
+  .row.project-row
+    each project in row
+      .col-md-4
+        .project-thumb(class='cat-' + project.category)
+          p= project.name
+          p= project.url

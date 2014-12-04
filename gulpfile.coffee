@@ -12,6 +12,7 @@ fileInclude = require 'gulp-file-include'
 jade        = require 'gulp-jade'
 svgSprite   = require 'gulp-svg-sprites'
 plumber     = require 'gulp-plumber'
+templatizer = require 'templatizer'
 browserify  = require 'browserify'
 transform   = require 'vinyl-transform'
 runSequence = require 'run-sequence'
@@ -48,6 +49,13 @@ handleError = (err) ->
   @emit 'end'
 
 
+
+# render Jade templates
+#   see: https://github.com/muraken720/nancle/blob/master/gulpfile.coffee
+#   TODO: find/request (or build) gulp-templatizer (stream support)
+#   TODO: try not to compile back into src/ (seems wrong)
+gulp.task 'templatizer', ->
+  templatizer "#{paths.src}jade/templates", "#{paths.src}scripts/!tmpl.js"
 
 # BrowserSync
 gulp.task 'browser-sync', ->
@@ -146,16 +154,19 @@ gulp.task 'html', ['svg-icons'], ->
 
 # watch for changes
 gulp.task 'watch', ->
+  gulp.watch "#{paths.src}jade/templates/**/*.jade", -> runSequence 'templatizer', 'scripts', browserSync.reload
   gulp.watch "#{paths.src}styles/**/*", ['styles']
   gulp.watch "#{paths.src}scripts/**/*", -> runSequence 'scripts', browserSync.reload
   gulp.watch "#{paths.src}images/**/*", -> runSequence 'images', browserSync.reload
   gulp.watch [
-    "#{paths.src}jade/**/*.jade"
+    "#{paths.src}jade/layouts/**/*.jade"
+    "#{paths.src}jade/mixins/**/*.jade"
+    "#{paths.src}jade/pages/**/*.jade"
     "#{paths.src}icons/*.svg"
   ], -> runSequence 'html', browserSync.reload
 
 # default task: call with 'gulp' on command line
 gulp.task 'default', ['clean'], ->
-  runSequence ['root', 'html', 'styles', 'scripts', 'images'], ->
+  runSequence ['templatizer', 'root', 'html', 'styles', 'scripts', 'images'], ->
     if DEV
       runSequence ['watch', 'browser-sync']

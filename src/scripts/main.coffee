@@ -1,7 +1,7 @@
-$               = require('jquery')
-Work            = require('./lib/work')
-ExternalLinks   = require('./utils/external-links')
-GoogleAnalytics = require('./utils/google-analytics')
+$               = require 'jquery'
+Work            = require './lib/work'
+ExternalLinks   = require './utils/external-links'
+GoogleAnalytics = require './utils/google-analytics'
 
 
 
@@ -16,5 +16,6 @@ $ ->
   externalLinks.init()
 
   #
-  work = new Work()
+  $work = $('.work')
+  work = new Work($work)
   work.init()
