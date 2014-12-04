@@ -1,4 +1,5 @@
-$ = require 'jquery'
+$        = require 'jquery'
+projects = require '../data/projects'
 
 
 
@@ -9,6 +10,9 @@ class Work
     @init()
 
   select: ->
+
+  fill: ->
+
 
   init: ->
 

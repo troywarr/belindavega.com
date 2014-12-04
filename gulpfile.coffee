@@ -11,6 +11,7 @@ uglify      = require 'gulp-uglify'
 fileInclude = require 'gulp-file-include'
 jade        = require 'gulp-jade'
 svgSprite   = require 'gulp-svg-sprites'
+plumber     = require 'gulp-plumber'
 browserify  = require 'browserify'
 transform   = require 'vinyl-transform'
 runSequence = require 'run-sequence'
@@ -82,7 +83,8 @@ gulp.task 'scripts', ->
 
   gulp
     .src "#{paths.src}scripts/main.coffee"
-    .pipe(browserified)
+    .pipe plumber handleError
+    .pipe browserified
     .pipe gulpIf PROD, uglify()
     .pipe rename
       extname: '.min.js'
@@ -93,6 +95,7 @@ gulp.task 'scripts', ->
 gulp.task 'styles', ->
   gulp
     .src "#{paths.src}styles/*.less"
+    .pipe plumber handleError
     .pipe less()
     .pipe rename 'main.min.css'
     .pipe gulpIf PROD, minifyCSS()
@@ -105,6 +108,7 @@ gulp.task 'styles', ->
 gulp.task 'images', ->
   gulp
     .src "#{paths.src}images/*"
+    .pipe plumber handleError
     .pipe imageMin
       progressive: true
       svgoPlugins: [
@@ -123,6 +127,7 @@ gulp.task 'images', ->
 gulp.task 'svg-icons', ->
   gulp
     .src "#{paths.src}icons/*.svg"
+    .pipe plumber handleError
     .pipe svgSprite
       selector: 'icon-%f'
       preview: DEV and { sprite: 'index.html' } # TODO: file bug; setting not honored?
@@ -133,6 +138,7 @@ gulp.task 'svg-icons', ->
 gulp.task 'html', ['svg-icons'], ->
   gulp
     .src "#{paths.src}jade/pages/*.jade"
+    .pipe plumber handleError
     .pipe jade()
     .pipe fileInclude
       basepath: paths.dist
