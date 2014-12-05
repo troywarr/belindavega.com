@@ -3,6 +3,20 @@ projects = [
     category: 'identity'
     name: 'Identity 1'
     url: ''
+    client: 'Client Name'
+    description: 'Project description here'
+    process: ''
+    services: [
+      'Logo Design'
+      'Photography'
+      'Illustration'
+    ]
+    software: [
+      'Illustrator CC'
+      'Photoshop CC'
+      'InDesign CC'
+      'Fireworks'
+    ]
   }
   {
     category: 'print'
