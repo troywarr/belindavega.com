@@ -264,6 +264,23 @@ header {
 .about {
   font-size: 18px;
   line-height: 1.6;
+  .clear-fix;
+
+  h2 {
+    float: left;
+    margin: 0 0 4rem;
+    font-size: 4rem;
+  }
+
+  h3 {
+    clear: left;
+  }
+
+  .type {
+    .highlight-box;
+    float: right;
+    background-color: #ccc;
+  }
 
   p {
     margin-bottom: 1em;
@@ -276,6 +293,26 @@ header {
     &:active {
       text-decoration: underline;
     }
+  }
+}
+
+.box {
+  .highlight-box;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 2rem 0 4rem;
+  width: 100%;
+
+  h3 {
+    margin-top: 0.7rem;
+  }
+
+  &.services {
+    float: left;
+  }
+
+  &.software {
+    float: right;
   }
 }
 

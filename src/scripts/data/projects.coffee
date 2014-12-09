@@ -165,9 +165,10 @@ projects = [
       'identity'
     ]
     slug: 'las-casitas'
-    name: 'Las Casitas Rental Guest Homes'
+    name: 'Las Casitas Guest Rental Homes'
     type: 'Print Identity Package'
-    description: 'Las Casitas offers an alternative to stuffy motel rooms with fully furnished rental homes in three of the most loved areas in and around Austin: Sixth Street, South Congress, and scenic Dripping Springs. Whether it\'s a staycation in a different part of town for locals, or first-timers hungry for a little taste of some genuine local flair, Las Casitas invites visitors to try out the neighborhood and live like it was your own. No matter which area you choose, everything you need is within walking distance of great coffee shops, cafes, the best restaurants, and Austin\'s world-reknowned nightlife and live music. The Property Guide pamphlet design outlines the homes and what each has to offer. Important property guidelines and numbers are also listed for quick reference in case you have any concerns or emergencies during your stay. The Neighborhood Guide briefly outlines and maps out the different neighborhoods where the homes are located. Both of these are provided in each room for guests.'
+    description: 'Las Casitas offers an alternative to stuffy motel rooms with fully furnished rental homes in three of the most loved areas in and around Austin: Sixth Street, South Congress, and scenic Dripping Springs. Whether it\'s a staycation in a different part of town for locals, or first-timers hungry for a little taste of some genuine local flair, Las Casitas invites visitors to try out the neighborhood and live like it was your own. No matter which area you choose, everything you need is within walking distance of great coffee shops, cafes, the best restaurants, and Austin\'s world-reknowned nightlife and live music.'
+    process: 'The Property Guide pamphlet design outlines the homes and what each has to offer. Important property guidelines and numbers are also listed for quick reference in case you have any concerns or emergencies during your stay. The Neighborhood Guide briefly outlines and maps out the different neighborhoods where the homes are located. Both of these are provided in each room for guests.'
     services: [
       'Logo Design'
       'Identity'

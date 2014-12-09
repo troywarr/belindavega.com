@@ -6791,6 +6791,29 @@ header nav ul a:active {
   font-size: 18px;
   line-height: 1.6;
 }
+.about:before,
+.about:after {
+  content: ' ';
+  display: table;
+}
+.about:after {
+  clear: both;
+}
+.about h2 {
+  float: left;
+  margin: 0 0 4rem;
+  font-size: 4rem;
+}
+.about h3 {
+  clear: left;
+}
+.about .type {
+  background-color: #eee;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  float: right;
+  background-color: #ccc;
+}
 .about p {
   margin-bottom: 1em;
 }
@@ -6800,6 +6823,24 @@ header nav ul a:active {
 .about a:hover,
 .about a:active {
   text-decoration: underline;
+}
+.box {
+  background-color: #eee;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 2rem 0 4rem;
+  width: 100%;
+}
+.box h3 {
+  margin-top: 0.7rem;
+}
+.box.services {
+  float: left;
+}
+.box.software {
+  float: right;
 }
 .project-image {
   height: 0;

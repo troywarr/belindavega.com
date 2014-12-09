@@ -22,11 +22,11 @@
         var locals_for_with = locals || {};
         (function(project, undefined) {
             var i;
-            buf.push('<div class="row"><div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0"><h2>' + jade.escape(null == (jade_interp = project.name) ? "" : jade_interp) + '</h2><p class="type">' + jade.escape(null == (jade_interp = project.type) ? "" : jade_interp) + '</p><p class="description">' + jade.escape(null == (jade_interp = project.description) ? "" : jade_interp) + "</p>");
+            buf.push('<div class="about"><div class="row"><div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0"><h2>' + jade.escape(null == (jade_interp = project.name) ? "" : jade_interp) + '</h2></div><div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0"><p class="type">' + jade.escape(null == (jade_interp = project.type) ? "" : jade_interp) + '</p></div></div><div class="row"><div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0"><h3>Description</h3><p class="description">' + jade.escape(null == (jade_interp = project.description) ? "" : jade_interp) + "</p>");
             if (project.process) {
-                buf.push('<p class="process">' + jade.escape(null == (jade_interp = project.process) ? "" : jade_interp) + "</p>");
+                buf.push('<h3>Thought Process</h3><p class="process">' + jade.escape(null == (jade_interp = project.process) ? "" : jade_interp) + "</p>");
             }
-            buf.push('<ul class="services">');
+            buf.push('</div></div></div><div class="row"><div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0"><div class="services box"><h3>Services</h3><ul>');
             (function() {
                 var $obj = project.services;
                 if ("number" == typeof $obj.length) {
@@ -43,7 +43,7 @@
                     }
                 }
             }).call(this);
-            buf.push('</ul><ul class="software">');
+            buf.push('</ul></div></div><div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0"><div class="software box"><h3>Software</h3><ul>');
             (function() {
                 var $obj = project.software;
                 if ("number" == typeof $obj.length) {
@@ -60,17 +60,17 @@
                     }
                 }
             }).call(this);
-            buf.push('</ul></div></div><div class="row">');
+            buf.push('</ul></div></div></div><div class="row">');
             i = 0;
             while (i < project.photos.main) {
                 buf.push('<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0"><div' + jade.cls([ "project-image", "main", project.slug, "image-" + ++i ], [ null, null, true, true ]) + "></div></div>");
             }
             buf.push("</div>");
             if (project.photos.process) {
-                buf.push('<div class="row"><div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0"><h3>The Process</h3></div></div><div class="row">');
+                buf.push('<div class="row"><div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0"><h3>Process Shots</h3></div></div><div class="row">');
                 i = 0;
                 while (i < project.photos.process) {
-                    buf.push('<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0"><div' + jade.cls([ "project-image", "process", project.slug, "image-" + ++i ], [ null, null, true, true ]) + "></div></div>");
+                    buf.push('<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0"><div' + jade.cls([ "project-image", "process", project.slug, "image-" + ++i ], [ null, null, true, true ]) + "></div></div>");
                 }
                 buf.push("</div>");
             }
