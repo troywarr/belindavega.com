@@ -69,7 +69,73 @@ body {
 
 
 
+// home page
+
+
+.category {
+  display: block;
+  color: #000;
+
+  .thumb {
+    height: 0;
+    padding-bottom: 100%;
+  }
+
+  .name {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem 0 4.5rem;
+  }
+
+  &.identity {
+    .thumb {
+      .image-2x('../images/categories/identity.jpg', 100%, 100%);
+      background-image: url('../images/categories/identity.jpg');
+    }
+  }
+
+  &.print {
+    .thumb {
+      .image-2x('../images/categories/print.jpg', 100%, 100%);
+      background-image: url('../images/categories/print.jpg');
+    }
+  }
+
+  &.web-design {
+    .thumb {
+      .image-2x('../images/categories/web-design.png', 100%, 100%);
+      background-image: url('../images/categories/web-design.png');
+    }
+  }
+
+  &.photography {
+    .thumb {
+      .image-2x('../images/categories/photography.jpg', 100%, 100%);
+      background-image: url('../images/categories/photography.jpg');
+    }
+  }
+}
+
+
+
 // unorganized
+
+a {
+  color: #000;
+
+  &:hover,
+  &:active {
+    color: @color6;
+  }
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
 
 h1 {
   @ptSansNarrow();
@@ -79,15 +145,61 @@ h1 {
   text-align: center;
 }
 
+.logo {
+  .image-2x('../images/logo.png', 44rem, 6.8rem);
+  background-image: url('../images/logo.png');
+  width: 44rem;
+  height: 6.8rem;
+  margin: 3.5rem auto 0;
+}
+
 .project-thumb {
-  height: 220px;
+  height: 0;
+  padding-bottom: 100%;
   background-color: #eee;
   margin-bottom: 20px;
+  position: relative;
+  display: block;
+
+  p {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    text-transform: uppercase;
+    display: table;
+    width: 80%;
+    height: 80%;
+    visibility: hidden;
+  }
+
+  &:hover p,
+  &:active p {
+    visibility: visible;
+  }
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.4;
+    padding: 0 10%;
+    font-weight: bold;
+    color: #000;
+  }
+
+  &.gentlemans-gitney {
+    .image-2x('../images/projects/gentlemans-gitney/main/1.jpg', 100%, 100%);
+    background-image: url('../images/projects/gentlemans-gitney/main/1.jpg');
+  }
 }
 
 .project-tabs {
   .piped-nav(@color6);
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 30px;
 
   :first-child {
@@ -99,7 +211,8 @@ h1 {
   .piped-nav(@color6);
   font-size: 1.5rem;
   text-align: center;
-  margin: 30px 0 70px;
+  margin: 40px 0 70px;
+  text-transform: uppercase;
 }
 
 header {
@@ -109,7 +222,25 @@ header {
       font-size: 3rem;
       text-align: center;
       text-transform: uppercase;
-      margin: 80px 0 60px;
+      margin: 2.2rem 0 5rem;
+    }
+  }
+}
+
+.about {
+  font-size: 18px;
+  line-height: 1.6;
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: @color6;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
     }
   }
 }

@@ -1,7 +1,5 @@
-each row in projects
-  .row.project-row
-    each project in row
-      .col-md-4
-        .project-thumb(class='cat-' + project.category)
-          p= project.name
-          p= project.url
+each project in projects
+  .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-0.col-md-4.col-md-offset-0
+    a.project-thumb(href="project.html?name=" + project.slug, class=project.slug)
+      p
+        span= project.name

@@ -17,11 +17,18 @@ block article
   .container
     .work
       .row
-        .col-md-12
+        .col-xs-10.col-xs-offset-1.col-sm-12.col-sm-offset-0
           ul.project-tabs
-            li(data-category="everything").selected Everything
-            li(data-category="identity") Identity
-            li(data-category="print") Print
-            li(data-category="web") Web
-            li(data-category="photography") Photography
-      .project-thumbs
+            li(data-category="everything").selected
+              a(href="#everything") Everything
+            li(data-category="identity")
+              a(href="#identity") Identity
+            li(data-category="print")
+              a(href="#print") Print
+            li(data-category="web-design")
+              a(href="#web-design") Web Design
+            li(data-category="photography")
+              a(href="#photography") Photography
+      .row
+        .project-thumbs
+          //- templates/work.jade

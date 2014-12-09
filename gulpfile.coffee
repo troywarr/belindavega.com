@@ -115,7 +115,8 @@ gulp.task 'styles', ->
 #   see: https://github.com/sindresorhus/gulp-imagemin
 gulp.task 'images', ->
   gulp
-    .src "#{paths.src}images/*"
+    .src "images/**",
+      cwd: "#{paths.src}**"
     .pipe plumber handleError
     .pipe imageMin
       progressive: true
@@ -127,7 +128,7 @@ gulp.task 'images', ->
       use: [
         pngCrush()
       ]
-    .pipe gulp.dest "#{paths.dist}images/"
+    .pipe gulp.dest paths.dist
 
 # SVG icon sprite
 #   see: http://css-tricks.com/svg-sprites-use-better-icon-fonts/
@@ -145,7 +146,8 @@ gulp.task 'svg-icons', ->
 # copy HTML
 gulp.task 'html', ['svg-icons'], ->
   gulp
-    .src "#{paths.src}jade/pages/*.jade"
+    .src "*.jade",
+      cwd: "#{paths.src}jade/pages/**"
     .pipe plumber handleError
     .pipe jade()
     .pipe fileInclude

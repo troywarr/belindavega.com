@@ -25,49 +25,15 @@
                 var $obj = projects;
                 if ("number" == typeof $obj.length) {
                     for (var $index = 0, $l = $obj.length; $index < $l; $index++) {
-                        var row = $obj[$index];
-                        buf.push('<div class="row project-row">');
-                        (function() {
-                            var $obj = row;
-                            if ("number" == typeof $obj.length) {
-                                for (var $index = 0, $l = $obj.length; $index < $l; $index++) {
-                                    var project = $obj[$index];
-                                    buf.push('<div class="col-md-4"><div' + jade.cls([ "project-thumb", "cat-" + project.category ], [ null, true ]) + "><p>" + jade.escape(null == (jade_interp = project.name) ? "" : jade_interp) + "</p><p>" + jade.escape(null == (jade_interp = project.url) ? "" : jade_interp) + "</p></div></div>");
-                                }
-                            } else {
-                                var $l = 0;
-                                for (var $index in $obj) {
-                                    $l++;
-                                    var project = $obj[$index];
-                                    buf.push('<div class="col-md-4"><div' + jade.cls([ "project-thumb", "cat-" + project.category ], [ null, true ]) + "><p>" + jade.escape(null == (jade_interp = project.name) ? "" : jade_interp) + "</p><p>" + jade.escape(null == (jade_interp = project.url) ? "" : jade_interp) + "</p></div></div>");
-                                }
-                            }
-                        }).call(this);
-                        buf.push("</div>");
+                        var project = $obj[$index];
+                        buf.push('<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0"><a' + jade.attr("href", "project.html?name=" + project.slug, true, false) + jade.cls([ "project-thumb", project.slug ], [ null, true ]) + "><p><span>" + jade.escape(null == (jade_interp = project.name) ? "" : jade_interp) + "</span></p></a></div>");
                     }
                 } else {
                     var $l = 0;
                     for (var $index in $obj) {
                         $l++;
-                        var row = $obj[$index];
-                        buf.push('<div class="row project-row">');
-                        (function() {
-                            var $obj = row;
-                            if ("number" == typeof $obj.length) {
-                                for (var $index = 0, $l = $obj.length; $index < $l; $index++) {
-                                    var project = $obj[$index];
-                                    buf.push('<div class="col-md-4"><div' + jade.cls([ "project-thumb", "cat-" + project.category ], [ null, true ]) + "><p>" + jade.escape(null == (jade_interp = project.name) ? "" : jade_interp) + "</p><p>" + jade.escape(null == (jade_interp = project.url) ? "" : jade_interp) + "</p></div></div>");
-                                }
-                            } else {
-                                var $l = 0;
-                                for (var $index in $obj) {
-                                    $l++;
-                                    var project = $obj[$index];
-                                    buf.push('<div class="col-md-4"><div' + jade.cls([ "project-thumb", "cat-" + project.category ], [ null, true ]) + "><p>" + jade.escape(null == (jade_interp = project.name) ? "" : jade_interp) + "</p><p>" + jade.escape(null == (jade_interp = project.url) ? "" : jade_interp) + "</p></div></div>");
-                                }
-                            }
-                        }).call(this);
-                        buf.push("</div>");
+                        var project = $obj[$index];
+                        buf.push('<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0"><a' + jade.attr("href", "project.html?name=" + project.slug, true, false) + jade.cls([ "project-thumb", project.slug ], [ null, true ]) + "><p><span>" + jade.escape(null == (jade_interp = project.name) ? "" : jade_interp) + "</span></p></a></div>");
                     }
                 }
             }).call(this);
