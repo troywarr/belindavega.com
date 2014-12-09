@@ -6464,6 +6464,77 @@ body {
 .page-row-expanded {
   height: 100%;
 }
+.category {
+  display: block;
+  color: #000;
+}
+.category .thumb {
+  height: 0;
+  padding-bottom: 100%;
+}
+.category .name {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1.5rem 0 4.5rem;
+}
+.category.identity .thumb {
+  background-image: url(../images/categories/identity.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/categories/identity.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .category.identity .thumb {
+    background-image: url(../images/categories/identity@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.category.print .thumb {
+  background-image: url(../images/categories/print.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/categories/print.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .category.print .thumb {
+    background-image: url(../images/categories/print@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.category.web-design .thumb {
+  background-image: url(../images/categories/web-design.png);
+  background-repeat: no-repeat;
+  background-image: url('../images/categories/web-design.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .category.web-design .thumb {
+    background-image: url(../images/categories/web-design@2x.png);
+    background-size: 100% 100%;
+  }
+}
+.category.photography .thumb {
+  background-image: url(../images/categories/photography.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/categories/photography.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .category.photography .thumb {
+    background-image: url(../images/categories/photography@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+a {
+  color: #000;
+}
+a:hover,
+a:active {
+  color: #f7931e;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
 h1 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 400;
@@ -6471,15 +6542,70 @@ h1 {
   margin: 4rem 0 0.5rem;
   text-align: center;
 }
+.logo {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-image: url('../images/logo.png');
+  width: 44rem;
+  height: 6.8rem;
+  margin: 3.5rem auto 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .logo {
+    background-image: url(../images/logo@2x.png);
+    background-size: 44rem 6.8rem;
+  }
+}
 .project-thumb {
-  height: 220px;
+  height: 0;
+  padding-bottom: 100%;
   background-color: #eee;
   margin-bottom: 20px;
+  position: relative;
+  display: block;
+}
+.project-thumb p {
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  bottom: 10%;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  text-transform: uppercase;
+  display: table;
+  width: 80%;
+  height: 80%;
+  visibility: hidden;
+}
+.project-thumb:hover p,
+.project-thumb:active p {
+  visibility: visible;
+}
+.project-thumb span {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1.4;
+  padding: 0 10%;
+  font-weight: bold;
+  color: #000;
+}
+.project-thumb.gentlemans-gitney {
+  background-image: url(../images/projects/gentlemans-gitney/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/gentlemans-gitney/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-thumb.gentlemans-gitney {
+    background-image: url(../images/projects/gentlemans-gitney/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
 }
 .project-tabs {
   list-style: none;
   padding: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 30px;
 }
 .project-tabs li {
@@ -6503,6 +6629,9 @@ h1 {
 .project-tabs li.selected a {
   color: #f7931e;
 }
+.project-tabs a {
+  color: #000;
+}
 .project-tabs a:hover,
 .project-tabs a:active {
   text-decoration: none;
@@ -6515,7 +6644,8 @@ h1 {
   padding: 0;
   font-size: 1.5rem;
   text-align: center;
-  margin: 30px 0 70px;
+  margin: 40px 0 70px;
+  text-transform: uppercase;
 }
 .social li {
   display: inline-block;
@@ -6538,6 +6668,9 @@ h1 {
 .social li.selected a {
   color: #f7931e;
 }
+.social a {
+  color: #000;
+}
 .social a:hover,
 .social a:active {
   text-decoration: none;
@@ -6548,7 +6681,7 @@ header nav ul {
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  margin: 80px 0 60px;
+  margin: 2.2rem 0 5rem;
 }
 header nav ul li {
   display: inline-block;
@@ -6571,7 +6704,24 @@ header nav ul li:active a,
 header nav ul li.selected a {
   color: #f7931e;
 }
+header nav ul a {
+  color: #000;
+}
 header nav ul a:hover,
 header nav ul a:active {
   text-decoration: none;
+}
+.about {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.about p {
+  margin-bottom: 1em;
+}
+.about a {
+  color: #f7931e;
+}
+.about a:hover,
+.about a:active {
+  text-decoration: underline;
 }
