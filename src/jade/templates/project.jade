@@ -1,0 +1,29 @@
+- var i
+
+.row
+  .col-xs-10.col-xs-offset-1.col-sm-12.col-sm-offset-0
+    h2= project.name
+    p.type= project.type
+    p.description= project.description
+    if project.process
+      p.process= project.process
+    ul.services
+      each service in project.services
+        li= service
+    ul.software
+      each software in project.software
+        li= software
+.row
+  - i = 0
+  while i < project.photos.main
+    .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-0
+      .project-image.main(class=project.slug class="image-" + ++i)
+if project.photos.process
+  .row
+    .col-xs-10.col-xs-offset-1.col-sm-12.col-sm-offset-0
+      h3 The Process
+  .row
+    - i = 0
+    while i < project.photos.process
+      .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-0.col-md-4.col-md-offset-0
+        .project-image.process(class=project.slug class="image-" + ++i)

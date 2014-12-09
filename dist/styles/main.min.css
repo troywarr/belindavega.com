@@ -6559,7 +6559,6 @@ h1 {
 .project-thumb {
   height: 0;
   padding-bottom: 100%;
-  background-color: #eee;
   margin-bottom: 20px;
   position: relative;
   display: block;
@@ -6801,4 +6800,438 @@ header nav ul a:active {
 .about a:hover,
 .about a:active {
   text-decoration: underline;
+}
+.project-image {
+  height: 0;
+  padding-bottom: 100%;
+  margin-bottom: 20px;
+}
+.project-image.austin-daze.main.image-1 {
+  background-image: url(../images/projects/austin-daze/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/austin-daze/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.austin-daze.main.image-1 {
+    background-image: url(../images/projects/austin-daze/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.austin-daze.main.image-2 {
+  background-image: url(../images/projects/austin-daze/main/2.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/austin-daze/main/2.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.austin-daze.main.image-2 {
+    background-image: url(../images/projects/austin-daze/main/2@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.austin-daze.main.image-3 {
+  background-image: url(../images/projects/austin-daze/main/3.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/austin-daze/main/3.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.austin-daze.main.image-3 {
+    background-image: url(../images/projects/austin-daze/main/3@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.austin-daze.process.image-1 {
+  background-image: url(../images/projects/austin-daze/process/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/austin-daze/process/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.austin-daze.process.image-1 {
+    background-image: url(../images/projects/austin-daze/process/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.austin-daze.process.image-2 {
+  background-image: url(../images/projects/austin-daze/process/2.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/austin-daze/process/2.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.austin-daze.process.image-2 {
+    background-image: url(../images/projects/austin-daze/process/2@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.austin-daze.process.image-3 {
+  background-image: url(../images/projects/austin-daze/process/3.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/austin-daze/process/3.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.austin-daze.process.image-3 {
+    background-image: url(../images/projects/austin-daze/process/3@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.digital-butler.main.image-1 {
+  background-image: url(../images/projects/digital-butler/main/1.png);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/digital-butler/main/1.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.digital-butler.main.image-1 {
+    background-image: url(../images/projects/digital-butler/main/1@2x.png);
+    background-size: 100% 100%;
+  }
+}
+.project-image.digital-butler.main.image-2 {
+  background-image: url(../images/projects/digital-butler/main/2.png);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/digital-butler/main/2.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.digital-butler.main.image-2 {
+    background-image: url(../images/projects/digital-butler/main/2@2x.png);
+    background-size: 100% 100%;
+  }
+}
+.project-image.digital-butler.main.image-3 {
+  background-image: url(../images/projects/digital-butler/main/3.png);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/digital-butler/main/3.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.digital-butler.main.image-3 {
+    background-image: url(../images/projects/digital-butler/main/3@2x.png);
+    background-size: 100% 100%;
+  }
+}
+.project-image.digital-butler.main.image-4 {
+  background-image: url(../images/projects/digital-butler/main/4.png);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/digital-butler/main/4.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.digital-butler.main.image-4 {
+    background-image: url(../images/projects/digital-butler/main/4@2x.png);
+    background-size: 100% 100%;
+  }
+}
+.project-image.fecalface.main.image-1 {
+  background-image: url(../images/projects/fecalface/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/fecalface/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.fecalface.main.image-1 {
+    background-image: url(../images/projects/fecalface/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.fecalface.main.image-2 {
+  background-image: url(../images/projects/fecalface/main/2.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/fecalface/main/2.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.fecalface.main.image-2 {
+    background-image: url(../images/projects/fecalface/main/2@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.fecalface.main.image-3 {
+  background-image: url(../images/projects/fecalface/main/3.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/fecalface/main/3.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.fecalface.main.image-3 {
+    background-image: url(../images/projects/fecalface/main/3@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.fecalface.process.image-1 {
+  background-image: url(../images/projects/fecalface/process/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/fecalface/process/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.fecalface.process.image-1 {
+    background-image: url(../images/projects/fecalface/process/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.fecalface.process.image-2 {
+  background-image: url(../images/projects/fecalface/process/2.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/fecalface/process/2.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.fecalface.process.image-2 {
+    background-image: url(../images/projects/fecalface/process/2@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.fecalface.process.image-3 {
+  background-image: url(../images/projects/fecalface/process/3.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/fecalface/process/3.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.fecalface.process.image-3 {
+    background-image: url(../images/projects/fecalface/process/3@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.gentlemans-gitney.main.image-1 {
+  background-image: url(../images/projects/gentlemans-gitney/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/gentlemans-gitney/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.gentlemans-gitney.main.image-1 {
+    background-image: url(../images/projects/gentlemans-gitney/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.gentlemans-gitney.main.image-2 {
+  background-image: url(../images/projects/gentlemans-gitney/main/2.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/gentlemans-gitney/main/2.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.gentlemans-gitney.main.image-2 {
+    background-image: url(../images/projects/gentlemans-gitney/main/2@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.gentlemans-gitney.main.image-3 {
+  background-image: url(../images/projects/gentlemans-gitney/main/3.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/gentlemans-gitney/main/3.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.gentlemans-gitney.main.image-3 {
+    background-image: url(../images/projects/gentlemans-gitney/main/3@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.gentlemans-gitney.main.image-4 {
+  background-image: url(../images/projects/gentlemans-gitney/main/4.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/gentlemans-gitney/main/4.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.gentlemans-gitney.main.image-4 {
+    background-image: url(../images/projects/gentlemans-gitney/main/4@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.mixtape.main.image-1 {
+  background-image: url(../images/projects/mixtape/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/mixtape/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.mixtape.main.image-1 {
+    background-image: url(../images/projects/mixtape/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.mixtape.main.image-2 {
+  background-image: url(../images/projects/mixtape/main/2.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/mixtape/main/2.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.mixtape.main.image-2 {
+    background-image: url(../images/projects/mixtape/main/2@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.las-casitas.main.image-1 {
+  background-image: url(../images/projects/las-casitas/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/las-casitas/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.las-casitas.main.image-1 {
+    background-image: url(../images/projects/las-casitas/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.las-casitas.main.image-2 {
+  background-image: url(../images/projects/las-casitas/main/2.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/las-casitas/main/2.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.las-casitas.main.image-2 {
+    background-image: url(../images/projects/las-casitas/main/2@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.las-casitas.main.image-3 {
+  background-image: url(../images/projects/las-casitas/main/3.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/las-casitas/main/3.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.las-casitas.main.image-3 {
+    background-image: url(../images/projects/las-casitas/main/3@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.las-casitas.main.image-4 {
+  background-image: url(../images/projects/las-casitas/main/4.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/las-casitas/main/4.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.las-casitas.main.image-4 {
+    background-image: url(../images/projects/las-casitas/main/4@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.las-casitas.main.image-5 {
+  background-image: url(../images/projects/las-casitas/main/5.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/las-casitas/main/5.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.las-casitas.main.image-5 {
+    background-image: url(../images/projects/las-casitas/main/5@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.las-casitas.main.image-6 {
+  background-image: url(../images/projects/las-casitas/main/6.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/las-casitas/main/6.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.las-casitas.main.image-6 {
+    background-image: url(../images/projects/las-casitas/main/6@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.las-casitas.main.image-7 {
+  background-image: url(../images/projects/las-casitas/main/7.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/las-casitas/main/7.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.las-casitas.main.image-7 {
+    background-image: url(../images/projects/las-casitas/main/7@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.pratt-institute.main.image-1 {
+  background-image: url(../images/projects/pratt-institute/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/pratt-institute/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.pratt-institute.main.image-1 {
+    background-image: url(../images/projects/pratt-institute/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.pratt-institute.main.image-2 {
+  background-image: url(../images/projects/pratt-institute/main/2.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/pratt-institute/main/2.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.pratt-institute.main.image-2 {
+    background-image: url(../images/projects/pratt-institute/main/2@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.pratt-institute.main.image-3 {
+  background-image: url(../images/projects/pratt-institute/main/3.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/pratt-institute/main/3.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.pratt-institute.main.image-3 {
+    background-image: url(../images/projects/pratt-institute/main/3@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.pratt-institute.process.image-1 {
+  background-image: url(../images/projects/pratt-institute/process/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/pratt-institute/process/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.pratt-institute.process.image-1 {
+    background-image: url(../images/projects/pratt-institute/process/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.pratt-institute.process.image-2 {
+  background-image: url(../images/projects/pratt-institute/process/2.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/pratt-institute/process/2.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.pratt-institute.process.image-2 {
+    background-image: url(../images/projects/pratt-institute/process/2@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.abcs-jazz-slang.main.image-1 {
+  background-image: url(../images/projects/abcs-jazz-slang/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/abcs-jazz-slang/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.abcs-jazz-slang.main.image-1 {
+    background-image: url(../images/projects/abcs-jazz-slang/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.abcs-jazz-slang.main.image-2 {
+  background-image: url(../images/projects/abcs-jazz-slang/main/2.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/abcs-jazz-slang/main/2.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.abcs-jazz-slang.main.image-2 {
+    background-image: url(../images/projects/abcs-jazz-slang/main/2@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.abcs-jazz-slang.main.image-3 {
+  background-image: url(../images/projects/abcs-jazz-slang/main/3.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/abcs-jazz-slang/main/3.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.abcs-jazz-slang.main.image-3 {
+    background-image: url(../images/projects/abcs-jazz-slang/main/3@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.abcs-jazz-slang.main.image-4 {
+  background-image: url(../images/projects/abcs-jazz-slang/main/4.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/abcs-jazz-slang/main/4.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.abcs-jazz-slang.main.image-4 {
+    background-image: url(../images/projects/abcs-jazz-slang/main/4@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-image.abcs-jazz-slang.main.image-5 {
+  background-image: url(../images/projects/abcs-jazz-slang/main/5.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/abcs-jazz-slang/main/5.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-image.abcs-jazz-slang.main.image-5 {
+    background-image: url(../images/projects/abcs-jazz-slang/main/5@2x.jpg);
+    background-size: 100% 100%;
+  }
 }

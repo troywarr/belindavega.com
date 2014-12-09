@@ -14,6 +14,70 @@
     var templatizer = {};
 
 
+    // project.jade compiled template
+    templatizer["project"] = function tmpl_project(locals) {
+        var buf = [];
+        var jade_mixins = {};
+        var jade_interp;
+        var locals_for_with = locals || {};
+        (function(project, undefined) {
+            var i;
+            buf.push('<div class="row"><div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0"><h2>' + jade.escape(null == (jade_interp = project.name) ? "" : jade_interp) + '</h2><p class="type">' + jade.escape(null == (jade_interp = project.type) ? "" : jade_interp) + '</p><p class="description">' + jade.escape(null == (jade_interp = project.description) ? "" : jade_interp) + "</p>");
+            if (project.process) {
+                buf.push('<p class="process">' + jade.escape(null == (jade_interp = project.process) ? "" : jade_interp) + "</p>");
+            }
+            buf.push('<ul class="services">');
+            (function() {
+                var $obj = project.services;
+                if ("number" == typeof $obj.length) {
+                    for (var $index = 0, $l = $obj.length; $index < $l; $index++) {
+                        var service = $obj[$index];
+                        buf.push("<li>" + jade.escape(null == (jade_interp = service) ? "" : jade_interp) + "</li>");
+                    }
+                } else {
+                    var $l = 0;
+                    for (var $index in $obj) {
+                        $l++;
+                        var service = $obj[$index];
+                        buf.push("<li>" + jade.escape(null == (jade_interp = service) ? "" : jade_interp) + "</li>");
+                    }
+                }
+            }).call(this);
+            buf.push('</ul><ul class="software">');
+            (function() {
+                var $obj = project.software;
+                if ("number" == typeof $obj.length) {
+                    for (var $index = 0, $l = $obj.length; $index < $l; $index++) {
+                        var software = $obj[$index];
+                        buf.push("<li>" + jade.escape(null == (jade_interp = software) ? "" : jade_interp) + "</li>");
+                    }
+                } else {
+                    var $l = 0;
+                    for (var $index in $obj) {
+                        $l++;
+                        var software = $obj[$index];
+                        buf.push("<li>" + jade.escape(null == (jade_interp = software) ? "" : jade_interp) + "</li>");
+                    }
+                }
+            }).call(this);
+            buf.push('</ul></div></div><div class="row">');
+            i = 0;
+            while (i < project.photos.main) {
+                buf.push('<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0"><div' + jade.cls([ "project-image", "main", project.slug, "image-" + ++i ], [ null, null, true, true ]) + "></div></div>");
+            }
+            buf.push("</div>");
+            if (project.photos.process) {
+                buf.push('<div class="row"><div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0"><h3>The Process</h3></div></div><div class="row">');
+                i = 0;
+                while (i < project.photos.process) {
+                    buf.push('<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0"><div' + jade.cls([ "project-image", "process", project.slug, "image-" + ++i ], [ null, null, true, true ]) + "></div></div>");
+                }
+                buf.push("</div>");
+            }
+        }).call(this, "project" in locals_for_with ? locals_for_with.project : typeof project !== "undefined" ? project : undefined, "undefined" in locals_for_with ? locals_for_with.undefined : typeof undefined !== "undefined" ? undefined : undefined);
+        return buf.join("");
+    };
+
     // work.jade compiled template
     templatizer["work"] = function tmpl_work(locals) {
         var buf = [];

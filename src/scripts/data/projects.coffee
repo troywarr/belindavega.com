@@ -60,16 +60,8 @@ projects = [
       'Adobe Fireworks'
     ]
     photos:
-      main: [
-        ''
-        ''
-        ''
-      ]
-      process: [
-        ''
-        ''
-        ''
-      ]
+      main: 3
+      process: 3
   }
 
   # Digital Butler
@@ -94,12 +86,7 @@ projects = [
       'Adobe Fireworks'
     ]
     photos:
-      main: [
-        ''
-        ''
-        ''
-        ''
-      ]
+      main: 4
   }
 
   # FecalFace
@@ -121,16 +108,8 @@ projects = [
       'Fluid UI'
     ]
     photos:
-      main: [
-        ''
-        ''
-        ''
-      ]
-      process: [
-        ''
-        ''
-        ''
-      ]
+      main: 3
+      process: 3
   }
 
   # Gentleman's Gitney
@@ -153,12 +132,7 @@ projects = [
       'Adobe Illustrator'
     ]
     photos:
-      main: [
-        '1.jpg'
-        '2.jpg'
-        '3.jpg'
-        '4.jpg'
-      ]
+      main: 4
   }
 
   # Mixtape
@@ -181,10 +155,7 @@ projects = [
       'Adobe Fireworks'
     ]
     photos:
-      main: [
-        ''
-        ''
-      ]
+      main: 2
   }
 
   # Las Casitas
@@ -207,15 +178,7 @@ projects = [
       'Adobe InDesign'
     ]
     photos:
-      main: [
-        ''
-        ''
-        ''
-        ''
-        ''
-        ''
-        ''
-      ]
+      main: 7
   }
 
   # Pratt Institute
@@ -239,15 +202,8 @@ projects = [
       'Fluid UI'
     ]
     photos:
-      main: [
-        ''
-        ''
-        ''
-      ]
-      process: [
-        ''
-        ''
-      ]
+      main: 3
+      process: 2
   }
 
   # The ABCs of Jazz Slang
@@ -270,13 +226,7 @@ projects = [
       'Adobe Photoshop'
     ]
     photos:
-      main: [
-        ''
-        ''
-        ''
-        ''
-        ''
-      ]
+      main: 5
   }
 ]
 
