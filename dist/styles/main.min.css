@@ -6571,7 +6571,7 @@ h1 {
   right: 10%;
   bottom: 10%;
   left: 10%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   text-align: center;
   text-transform: uppercase;
   display: table;
@@ -6591,6 +6591,39 @@ h1 {
   font-weight: bold;
   color: #000;
 }
+.project-thumb.austin-daze {
+  background-image: url(../images/projects/austin-daze/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/austin-daze/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-thumb.austin-daze {
+    background-image: url(../images/projects/austin-daze/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-thumb.digital-butler {
+  background-image: url(../images/projects/digital-butler/main/1.png);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/digital-butler/main/1.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-thumb.digital-butler {
+    background-image: url(../images/projects/digital-butler/main/1@2x.png);
+    background-size: 100% 100%;
+  }
+}
+.project-thumb.fecalface {
+  background-image: url(../images/projects/fecalface/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/fecalface/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-thumb.fecalface {
+    background-image: url(../images/projects/fecalface/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
 .project-thumb.gentlemans-gitney {
   background-image: url(../images/projects/gentlemans-gitney/main/1.jpg);
   background-repeat: no-repeat;
@@ -6599,6 +6632,50 @@ h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .project-thumb.gentlemans-gitney {
     background-image: url(../images/projects/gentlemans-gitney/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-thumb.mixtape {
+  background-image: url(../images/projects/mixtape/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/mixtape/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-thumb.mixtape {
+    background-image: url(../images/projects/mixtape/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-thumb.las-casitas {
+  background-image: url(../images/projects/las-casitas/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/las-casitas/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-thumb.las-casitas {
+    background-image: url(../images/projects/las-casitas/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-thumb.pratt-institute {
+  background-image: url(../images/projects/pratt-institute/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/pratt-institute/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-thumb.pratt-institute {
+    background-image: url(../images/projects/pratt-institute/main/1@2x.jpg);
+    background-size: 100% 100%;
+  }
+}
+.project-thumb.abcs-jazz-slang {
+  background-image: url(../images/projects/abcs-jazz-slang/main/1.jpg);
+  background-repeat: no-repeat;
+  background-image: url('../images/projects/abcs-jazz-slang/main/1.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .project-thumb.abcs-jazz-slang {
+    background-image: url(../images/projects/abcs-jazz-slang/main/1@2x.jpg);
     background-size: 100% 100%;
   }
 }

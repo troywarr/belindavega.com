@@ -40,7 +40,7 @@ projects = [
     categories: [
       'web-design'
       'identity'
-      # 'photography'
+      'photography'
     ]
     slug: 'austin-daze'
     name: 'Austin Daze'
