@@ -6549,6 +6549,7 @@ h1 {
   width: 44rem;
   height: 6.8rem;
   margin: 3.5rem auto 0;
+  display: block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .logo {
